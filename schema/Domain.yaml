@@ -1,0 +1,43 @@
+Domain:
+  extends:
+    - Thing
+  label: "Domain"
+  plural: "Domains"
+  matchable: true
+  featured:
+    - name
+    - ipAddress
+  required:
+    - name
+  caption:
+    - name
+    - ipAddress
+  properties:
+    name:
+      label: "Name"
+      type: string
+    owner:
+      label: "Owner"
+      type: entity
+      range: LegalEntity
+      reverse:
+        name: userAccounts
+        label: "User accounts"
+    service:
+      label: "Service"
+      type: string
+    email:
+      label: "E-Mail"
+      type: email
+    number:
+      label: "Phone Number"
+      type: phone
+    username:
+      label: "Username"
+      type: string
+    password:
+      label: "Password"
+      type: string
+    ipAddress:
+      label: "IP address"
+      type: ip

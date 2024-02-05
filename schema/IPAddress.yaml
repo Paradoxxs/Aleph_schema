@@ -1,0 +1,33 @@
+IPAdress:
+  extends:
+    - Thing
+  label: "IP address"
+  plural: "IP addresses"
+  matchable: true
+  featured:
+    - ipAddress
+    - register
+  required:
+    - ipAddress
+  caption:
+    - ipAddress
+    - register
+  properties:
+    name:
+      label: "Name"
+      type: string
+    register:
+      label: "register"
+      type: string
+      reverse:
+        name: userAccounts
+        label: "User accounts"
+    service:
+      label: "Service"
+      type: string
+    email:
+      label: "E-Mail"
+      type: email
+    ipAddress:
+      label: "IP address"
+      type: ip

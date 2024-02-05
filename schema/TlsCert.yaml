@@ -1,0 +1,32 @@
+Domain:
+  extends:
+    - Thing
+  label: "Domain"
+  plural: "Domains"
+  matchable: true
+  featured:
+    - SHA256Hash
+    - domain
+    - ValidFrom
+    - ValidTo
+  required:
+    - SHA256Hash
+  caption:
+    - SHA256Hash
+    - Domain
+    - ValidFrom
+    - ValidTo
+  properties:
+    SHA256Hash:
+      label: "SHA256 Hash"
+      type: string
+    Domain:
+      label: "Domain"
+      type : string
+    ValidFrom:
+      label: "Valid from"
+      type:  date
+    ValidTo:
+      label: "Valid to"
+      type:  date
+
