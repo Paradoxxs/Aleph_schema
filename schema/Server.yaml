@@ -1,0 +1,26 @@
+Server:
+  extends:
+    - Thing
+  label: "Server"
+  plural: "Servers"
+  matchable: true
+  featured:
+    - Hostname
+    - ipAddress
+    - Ports
+  required:
+    - Hostname
+  caption:
+    - Hostname
+    - ipAddress
+    - Ports
+  properties:
+    Hostname:
+      label: "Hostname"
+      type: string
+    ipAddress:
+      label: "IP address"
+      type: ip
+    Ports:
+      label: "Ports"
+      type: json

@@ -1,0 +1,24 @@
+File:
+  label: File
+  plural: Files
+  matchable: false
+  generated: false
+  featured:
+    - Name
+    - Hash
+    - Type
+  caption:
+    - Name
+    - Hash
+    - Type
+  properties:
+    Name:
+      label: Name
+      type: string
+    Hash:
+      label: Hash
+      type: string
+    Type:
+      label: Type
+      type: string
+

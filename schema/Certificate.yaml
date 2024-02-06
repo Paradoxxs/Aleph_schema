@@ -1,0 +1,45 @@
+Cert:
+  extends:
+    - Thing
+  label: "Certificate"
+  plural: "Certificates"
+  matchable: true
+  featured:
+    - Hash
+    - PublicHash
+    - Name
+    - Identities
+    - ValidFrom
+    - ValidTo
+    - IssuerName
+  required:
+    - Hash
+  caption:
+    - Hash
+    - Identities
+    - ValidFrom
+    - ValidTo
+    - IssuerName
+  properties:
+    Hash:
+      label: "Hash"
+      type: string
+    PublicHash:
+      label: "Public Hash"
+      type: string
+    Name:
+      label: "Name"
+      type : string
+    Identities:
+      label: "Identities"
+      type : string
+    ValidFrom:
+      label: "Valid from"
+      type:  date
+    ValidTo:
+      label: "Valid to"
+      type:  date
+    IssuerName:
+      label: "Issuer name"
+      type: string
+
